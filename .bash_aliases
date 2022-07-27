@@ -1,3 +1,7 @@
+df -ah | grep root | awk '{ print $3, $2, $5 }' | xargs printf "Disk space used: %s/%s (%s)\n"
+
+alias slurp="transmission-cli"
+
 # General aliases
 alias malias="nano ~/.bash_aliases && source ~/.bash_aliases"
 alias cl="clear"
