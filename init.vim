@@ -10,3 +10,6 @@ set number
 set relativenumber
 set tabstop=4
 set shiftwidth=4
+
+" Remove any search highlighting in addition to normal Ctrl-L behaviour
+nnoremap <C-L> :nohlsearch<CR>:redraw!<CR>:<BS>
